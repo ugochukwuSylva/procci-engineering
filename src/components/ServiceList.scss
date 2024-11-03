@@ -1,0 +1,152 @@
+@import "../mixin/mixin.scss";
+
+.service {
+  width: 30rem;
+  height: 35rem;
+  margin-top: 2rem;
+  perspective: 250rem;
+  transition: transform 0.4s ease-in;
+
+  @include media-queries(75em) {
+    display: flex;
+    width: 60rem;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  @include media-queries(38.13em) {
+    display: block;
+    width: 30rem;
+    height: 80rem;
+    margin-top: 0;
+  }
+
+  & .card {
+    backface-visibility: hidden;
+    // width: 100%;
+    // height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    transition: transform 1s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--color-gray-bg1);
+    opacity: 0.7;
+
+    @include media-queries(75em) {
+      position: relative;
+      box-shadow: none;
+    }
+
+    @include media-queries(38.13em) {
+      min-height: 0%;
+    }
+
+    &.card-front {
+      width: 200rem;
+
+      @include media-queries(75em) {
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+      }
+
+      @include media-queries(38.13em) {
+        border-radius: 0%;
+      }
+    }
+
+    &.card-back {
+      transform: rotateY(180deg);
+      padding: 1rem 3rem;
+      width: 200rem;
+
+      @include media-queries(75em) {
+        transform: rotateY(0);
+        z-index: -2000;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+      }
+
+      @include media-queries(38.13em) {
+        border-radius: 0%;
+        min-height: 32.5rem;
+      }
+
+      & .card-picture {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+
+        & img {
+          width: 7rem;
+          height: 7rem;
+          object-fit: cover;
+          animation: animatedIcons 8s linear infinite;
+        }
+      }
+
+      & .card-technology {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        text-transform: uppercase;
+
+        & p {
+          margin: auto;
+          padding: 1rem;
+        }
+
+        & p:not(:last-child) {
+          border-bottom: 1px solid var(--color-gray-border);
+        }
+      }
+    }
+
+    & .service-text {
+      padding: 1rem;
+    }
+
+    & img {
+      // width: 100%;
+      height: 60%;
+      height: 17rem;
+      object-fit: cover;
+    }
+
+    & h3 {
+      text-transform: uppercase;
+    }
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &:hover .card-front {
+    transform: rotateY(-180deg);
+
+    @include media-queries(75em) {
+      transform: rotateY(0);
+      border-top-right-radius: 0px;
+    }
+  }
+
+  &:hover .card-back {
+    transform: rotate(0);
+  }
+
+  @keyframes animatedIcons {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

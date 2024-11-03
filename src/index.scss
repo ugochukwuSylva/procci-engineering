@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // Light mode
+  &,
+  &.light-mode {
+    --color-gray-text1: #343a40;
+    --color-gray-text2: #dee2e6;
+    --color-gray-bg1: #fafafa;
+
+    --color-gray-border: #dee2e6;
+  }
+
+  // Dark mode
+  &.dark-mode {
+    --color-gray-text1: #fafafa;
+    --color-gray-text2: #495057;
+    --color-gray-bg1: #051422;
+
+    --color-gray-border: #343a40;
+  }
+
+  --color-primary: #22c55e;
+  --color-secondary: #86efac;
+
+  --color-yellow-1: #ffec99;
+  --color-yellow-2: #ffd43b;
+  --color-yellow-3: #fff3bf;
+
+  --color-green-1: #2f9e44;
+  --color-green-2: #d3f9d8;
+  --color-green-3: #ebfbee;
+
+  --color-gray-stable1: #343a40;
+  --color-gray-stable2: #dee2e6;
+  --color-gray-stable3: #adb5bd;
+  --color-gray-stable4: #f1f3f5;
+
+  scroll-behavior: smooth;
+}
+
+* {
+  outline: none;
+}
+
+*:focus {
+  border: 3px solid var(--color-primary);
+}
+
+*::selection {
+  color: #fff;
+  background-color: var(--color-secondary);
+}
+
+html {
+  font-size: 62.5%;
+  transition: all 3s ease;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 17.5em) {
+    font-size: 48%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-gray-bg1);
+  color: var(--color-gray-text1);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.heading-primary {
+  margin-top: -4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 4.5rem;
+  display: inline-block;
+  color: var(--color-primary);
+  display: block;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.no_overflow {
+  overflow: hidden;
+}
+
+section {
+  padding: 8rem;
+
+  // @media only screen and (max-width: 76.88em) {
+  //   padding: 8rem 15rem;
+  // }
+
+  // @media only screen and (max-width: 70.38em) {
+  //   padding: 8rem 10rem;
+  // }
+
+  // @media only screen and (max-width: 62.5em) {
+  //   padding: 8rem;
+  // }
+
+  @media only screen and (max-width: 60em) {
+    padding: 8rem 3rem;
+  }
+  //
+  // @media only screen and (max-width: 50.63em) {
+  //   padding: 8rem 15rem;
+  // }
+
+  // @media only screen and (max-width: 42.63em) {
+  //   padding: 8rem;
+  // }
+
+  @media only screen and (max-width: 26.88em) {
+    padding: 8rem 3rem;
+  }
+}
