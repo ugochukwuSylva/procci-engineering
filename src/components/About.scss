@@ -82,6 +82,10 @@
     & .about__grid-image {
       border: 3px solid var(--color-primary);
 
+      @media only screen and (max-width: 30em) {
+        height: 37rem;
+      }
+
       & img {
         height: 100%;
         object-fit: cover;

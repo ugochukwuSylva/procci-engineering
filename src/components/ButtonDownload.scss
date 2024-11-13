@@ -1,13 +1,13 @@
-.resume {
+.vision-mission-btn {
   display: inline-block;
-  width: 7rem;
+  width: 20rem;
   height: 4rem;
   font-size: 1.7rem;
   border-radius: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 3rem;
   font-weight: 500;
   transition: all 0.3s;
   position: relative;
@@ -15,6 +15,7 @@
   white-space: nowrap;
   background-color: var(--color-secondary);
   color: var(--color-gray-stable1) !important;
+  cursor: pointer;
 
   &:hover,
   &:active {
@@ -25,15 +26,14 @@
   &::after {
     content: "";
     display: inline-block;
-    padding: 0 6rem;
-    width: 7rem;
-    height: 4rem;
+    width: 20rem;
+    height: 6rem;
     background-color: inherit;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 3rem;
+    border-radius: 2.5rem;
     z-index: -1;
     opacity: 1;
     transition: all 0.1s;
@@ -54,7 +54,6 @@
   // }
 
   @media only screen and (max-width: 33.75em) {
-    display: block;
     width: 80%;
     margin-left: 1.4rem;
     display: flex;

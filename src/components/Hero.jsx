@@ -33,26 +33,26 @@ function Hero() {
         <div className="hero__skill__container">
           <div className="hero__skill">
             <span>
-              <CountUp end={100} duration={2} />%
+              <CountUp end={100} duration={4} />%
             </span>
             <h6>Reliability</h6>
           </div>
           <div className="hero__skill">
             <span>
-              <CountUp end={100} duration={4} />%
+              <CountUp end={100} duration={6} />%
             </span>
             <h6>Comfortability</h6>
           </div>
           <div className="hero__skill">
             <span>
-              <CountUp end={100} duration={6} />%
+              <CountUp end={100} duration={8} />%
             </span>
             <h6>Durability</h6>
           </div>
         </div>
         {showButton && (
           <div style={{ transform: "translateY(5rem)" }}>
-            <ButtonDownload>Get Quote</ButtonDownload>
+            <ButtonDownload>Vision & Mission</ButtonDownload>
           </div>
         )}
       </div>

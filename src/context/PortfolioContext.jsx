@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import useLocalStorage from "../hook/useLocalStorage";
 
 const PortfolioContext = createContext();
@@ -8,6 +8,12 @@ function ContextProvider({ children }) {
     window.matchMedia("(prefers-color-scheme): dark").matches,
     "isDark"
   );
+
+  const [isVisible, setIsvisible] = useState(false);
+
+  function hideView() {
+    setIsvisible((prev) => !prev);
+  }
 
   useEffect(() => {
     if (isDark) {
@@ -24,7 +30,9 @@ function ContextProvider({ children }) {
   }
 
   return (
-    <PortfolioContext.Provider value={{ isDark, toggleDarkMode }}>
+    <PortfolioContext.Provider
+      value={{ isDark, toggleDarkMode, isVisible, hideView }}
+    >
       {children}
     </PortfolioContext.Provider>
   );

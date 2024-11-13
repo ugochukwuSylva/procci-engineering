@@ -1,8 +1,11 @@
+import { usePortfolio } from "../context/PortfolioContext";
 import "./ButtonDownload.scss";
 
 function ButtonDownload({ children }) {
+  const { hideView } = usePortfolio();
+
   return (
-    <a href="./MY_RESUME.pdf" download="UGOCHUKWU_RESUME" className="resume">
+    <a onClick={hideView} className="vision-mission-btn">
       {children}
     </a>
   );

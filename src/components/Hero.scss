@@ -128,6 +128,10 @@
   &__img__container {
     position: relative;
 
+    @media only screen and (max-width: 30em) {
+      height: 40rem;
+    }
+
     @media only screen and (max-width: 63em) {
       transform: scale(0.9);
     }
@@ -151,6 +155,10 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
         position: absolute;
+
+        @media only screen and (max-width: 30em) {
+          display: none;
+        }
       }
 
       &::before {

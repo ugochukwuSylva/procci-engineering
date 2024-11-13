@@ -65,7 +65,7 @@ function NavBar() {
         </span>
       )}
 
-      {!showButton && <ButtonDownload>Get Quote</ButtonDownload>}
+      {!showButton && <ButtonDownload>Vision & Mission</ButtonDownload>}
     </nav>
   );
 }

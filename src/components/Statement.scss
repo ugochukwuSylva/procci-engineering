@@ -1,0 +1,28 @@
+.statement {
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    .icon {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-text {
+    @media only screen and (max-width: 60em) {
+      text-align: justify;
+    }
+  }
+}
