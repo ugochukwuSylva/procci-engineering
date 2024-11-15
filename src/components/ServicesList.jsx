@@ -34,13 +34,13 @@ function ServiceList({ data, index, translateX }) {
 
       <div className="card card-back">
         <div className="card-picture">
-          {backImage.map((img, i) => (
+          {backImage?.map((img, i) => (
             <img src={img} alt="icon" key={i} />
           ))}
         </div>
 
         <div className="card-technology">
-          {technologies.map((el, i) => (
+          {technologies?.map((el, i) => (
             <p key={i}>{el}</p>
           ))}
         </div>

@@ -1,37 +1,47 @@
-import icon1 from "../assets/react-icon.png";
-import icon2 from "../assets/redux-icon.png";
-import icon3 from "../assets/tailwind-icon.png";
-import icon4 from "../assets/styledComp-icon.png";
-import icon5 from "../assets/supabase-icon.png";
-import icon6 from "../assets/leaflet-icon.png";
-
 export const SERVICES = [
   {
-    frontImage: "service-image-1.png",
-    backImage: [icon1, icon2, icon3],
-    technologies: ["React", "Redux", "Tailwind css"],
-    title: "Fast-React-Pizza",
+    frontImage: "service-image-1.jpg",
+    technologies: [
+      "blast-resistant structures",
+      "steel & concrete buildings",
+      "sheet piling",
+      "cofferdams",
+      "hydrocarbon storage facilities",
+    ],
+    title: "Engineering Design & Analysis",
     overview:
-      "An e-commerce website where tasty pizzas are ordered and delivered within 30mins.",
+      "Detailed engineering design for onshore and offshore projects, including structural analysis of platforms, pipelines, buildings, & industrial facilities.",
+
+    backgroundImage: `linear-gradient(to right bottom, var(--color-primary), var(--color-secondary))`,
+  },
+
+  {
+    frontImage: "service-image-2.jpg",
+    technologies: [
+      "Non destructive test (NDT)",
+      "Sub sea installation",
+      "rigging analysis",
+      "sea fastening design",
+      "mooring facilities",
+    ],
+    title: "Offshore & Onshore Engineering Solutions",
+    overview:
+      "Structural integrity assessments and dynamic analysis for offshore structures subjected to environmental loads.",
 
     backgroundImage: `linear-gradient(to right bottom, var(--color-primary), var(--color-secondary))`,
   },
   {
-    frontImage: "service-image-2.png",
-    backImage: [icon1],
-    technologies: ["React"],
-    title: "Worldwise",
+    frontImage: "service-image-3.jpg",
+    technologies: [
+      "Risk management",
+      "scheduling",
+      "resource allocation",
+      "quality assurance",
+      "project success",
+    ],
+    title: "Project management",
     overview:
-      "A map that tracks your footsteps into every city you can think of. Keeping mementoes of wonderful tour experiences.",
-    backgroundImage: `linear-gradient(to right bottom, var(--color-primary), var(--color-secondary))`,
-  },
-  {
-    frontImage: "service-image-3.jpeg",
-    backImage: [icon1, icon4, icon5],
-    technologies: ["React", "styled component", "supabase"],
-    title: "The wild oasis",
-    overview:
-      "A hospitality application where you can book your favorite hotel cabin with user authentication feature.",
+      "From planning & execution to monitoring and completion.Coordination of multidisciplinary teams to ensure projects are delivered on time, within budget & in compliance with client requirements.",
 
     backgroundImage: `linear-gradient(to right bottom, var(--color-primary), var(--color-secondary))`,
   },
