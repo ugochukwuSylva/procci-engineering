@@ -1,7 +1,7 @@
 import { usePortfolio } from "../context/PortfolioContext";
-import "./ButtonDownload.scss";
+import "./Button.scss";
 
-function ButtonDownload({ children }) {
+function Button({ children }) {
   const { hideView } = usePortfolio();
 
   return (
@@ -11,4 +11,4 @@ function ButtonDownload({ children }) {
   );
 }
 
-export default ButtonDownload;
+export default Button;

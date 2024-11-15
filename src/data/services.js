@@ -41,7 +41,7 @@ export const SERVICES = [
     ],
     title: "Project management",
     overview:
-      "From planning & execution to monitoring and completion.Coordination of multidisciplinary teams to ensure projects are delivered on time, within budget & in compliance with client requirements.",
+      "From planning & execution to monitoring and completion. Coordination of multi-disciplinary teams to ensure projects are delivered on time, within budget & in compliance with client requirements.",
 
     backgroundImage: `linear-gradient(to right bottom, var(--color-primary), var(--color-secondary))`,
   },

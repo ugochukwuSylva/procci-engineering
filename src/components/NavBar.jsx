@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 import "./NavBar.scss";
 
-import ButtonDownload from "./ButtonDownload";
 import NavBarList from "./NavBarList";
 import DarkModeButton from "./DarkModeButton";
 import useWindowResizer from "../hook/useWindowResizer";
 import { BiMenuAltRight } from "react-icons/bi";
+import Button from "./Button";
 
 function NavBar() {
   const [isActive, setIsActive] = useState(0);
@@ -53,6 +53,8 @@ function NavBar() {
           />
         ))}
 
+        {showButton && <Button>Vision & Mission</Button>}
+
         <span className="closeMenu" onClick={() => setShowMenu(false)}>
           &times;
         </span>
@@ -65,7 +67,7 @@ function NavBar() {
         </span>
       )}
 
-      {!showButton && <ButtonDownload>Vision & Mission</ButtonDownload>}
+      {!showButton && <Button>Vision & Mission</Button>}
     </nav>
   );
 }

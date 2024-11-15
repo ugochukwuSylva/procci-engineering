@@ -1,8 +1,8 @@
 import "./Hero.scss";
 import { ReactTyped } from "react-typed";
 import CountUp from "react-countup";
-import ButtonDownload from "./ButtonDownload";
 import useWindowResizer from "../hook/useWindowResizer";
+import Button from "./Button";
 
 function Hero() {
   const { showButton } = useWindowResizer(960);
@@ -52,7 +52,7 @@ function Hero() {
         </div>
         {showButton && (
           <div style={{ transform: "translateY(5rem)" }}>
-            <ButtonDownload>Vision & Mission</ButtonDownload>
+            <Button>Vision & Mission</Button>
           </div>
         )}
       </div>
