@@ -6,7 +6,6 @@ export const SERVICES = [
       "steel & concrete buildings",
       "sheet piling",
       "cofferdams",
-      "hydrocarbon storage facilities",
     ],
     title: "Engineering Design & Analysis",
     overview:
@@ -18,7 +17,6 @@ export const SERVICES = [
   {
     frontImage: "service-image-2.jpg",
     technologies: [
-      "Non destructive test (NDT)",
       "Sub sea installation",
       "rigging analysis",
       "sea fastening design",
@@ -37,7 +35,6 @@ export const SERVICES = [
       "scheduling",
       "resource allocation",
       "quality assurance",
-      "project success",
     ],
     title: "Project management",
     overview:
