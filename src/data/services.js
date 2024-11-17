@@ -34,14 +34,13 @@ export const SERVICES = [
     frontImage: "service-image-3.jpg",
     technologies: [
       "Risk management",
-      "scheduling",
       "resource allocation",
       "quality assurance",
       "project success",
     ],
     title: "Project management",
     overview:
-      "From planning & execution to monitoring and completion. Coordination of multi-disciplinary teams to ensure projects are delivered on time, within budget & in compliance with client requirements.",
+      "From planning & execution to monitoring & completion. Coordination of multi-disciplinary teams to ensure projects are delivered on time, within budget & in compliance with client requirments.",
 
     backgroundImage: `linear-gradient(to right bottom, var(--color-primary), var(--color-secondary))`,
   },

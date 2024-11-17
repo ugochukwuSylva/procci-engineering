@@ -10,8 +10,8 @@ function SliderDotList({ isActiveDot, handleActiveDot }) {
       onClick={handleClick}
       style={{
         backgroundColor: isActiveDot
-          ? "var(--color-gray-stable3)"
-          : "var(--color-gray-stable4)",
+          ? "var(--color-gray-text1)"
+          : "var(--color-gray-bg1)",
       }}
       className="dot"
     >
