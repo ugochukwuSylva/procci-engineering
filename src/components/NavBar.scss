@@ -20,7 +20,10 @@
     width: 100%;
     box-shadow: 0 1px 10px var(--color-primary);
     background-color: var(--color-gray-bg1);
-    // opacity: 0.9;
+
+    @media only screen and (max-width: 60em) {
+      opacity: 0.95;
+    }
   }
 
   &__logo {
@@ -81,10 +84,10 @@
     }
 
     @media only screen and (max-width: 60em) {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
-      height: 100dvh;
+      height: 100vh;
       width: 100%;
       background-color: inherit;
       display: flex;

@@ -35,19 +35,19 @@ function Hero() {
             <span>
               <CountUp end={100} duration={4} />%
             </span>
-            <h6>Reliability</h6>
+            <h6>Reliable</h6>
           </div>
           <div className="hero__skill">
             <span>
               <CountUp end={100} duration={6} />%
             </span>
-            <h6>Comfortability</h6>
+            <h6>Comfort</h6>
           </div>
           <div className="hero__skill">
             <span>
               <CountUp end={100} duration={8} />%
             </span>
-            <h6>Durability</h6>
+            <h6>Durable</h6>
           </div>
         </div>
         {showButton && (
